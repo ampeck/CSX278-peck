@@ -1,0 +1,7 @@
+FROM hoyosjs/grading_helper
+
+WORKDIR /app/data/
+
+ADD ./vunet /app/data/
+
+RUN ./grade.sh
